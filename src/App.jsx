@@ -1,12 +1,18 @@
 import Card from "./Card.jsx"
+import Nav from "./Nav.jsx"
+
 
 function App() {
   
 
   return (
    
-   
-    <Card></Card>
+   <>
+   <Nav></Nav>
+   <Card></Card>
+   <Card></Card>
+
+   </>
     
   
   )

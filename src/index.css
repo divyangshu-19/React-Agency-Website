@@ -2,39 +2,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
+:root{
+  --black:hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --highlight:rgba(205, 255, 3, 1);
+  --trial: hsl(180, 100%, 50%);
+}
+
+
 *{
   margin: 0;
-  background-color: black;
+  background-color: var(--black);
   font-family: inter;
 }
+
+
+.navBar{
+  margin: 2vh 10vh;
+
+}
+
+
+.navElements{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#logo a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 7vh;
+  letter-spacing: -2%;
+
+}
+
+#logo a span{
+  color: var(--highlight);
+}
+
+.navItems{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.navItems a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 3vh;
+  padding: 1vh;
+  margin: 0 2vh;
+  color: var(--white);
+}
+
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start button {
+
+  background-color: var(--highlight);
+  border: none;
+  font-weight: 700;
+  font-size: 3vh;
+  padding: 1.5vh;
+  border-radius: 10vh;
+
+}
+
+
+
+
+
 
 .cardBody{
   
   height: 400px;
   width: 400px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid var(--white);
   border-radius: 30px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  margin: 5vh;
   
 }
 
 .cardText{
-  color: white;
+  color: var(--white);
   background-color: rgba(255, 255, 255, 0);
   /* border: 1px solid crimson; */
 }
