@@ -7,6 +7,7 @@
   --white: hsl(0, 0%, 100%);
   --highlight:rgba(205, 255, 3, 1);
   --trial: hsl(180, 100%, 50%);
+  --transparent: rgba(255, 255, 255, 0);
 }
 
 
@@ -18,16 +19,17 @@
 
 
 .navBar {
-  margin: 2vh 10vh;
+  margin: 0vh 10vh;
   transition: background-color 0.3s ease;
 }
 
 .navBar.scrolled {
-  margin: 2vh 30vh;
+  margin: 5vh 30vh;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: var(--highlight);
+  /* background-color: var(--highlight); */
+  background-color: var(--transparent);
   border-radius: 10vh;
 
 }
@@ -35,20 +37,27 @@
 
 
 .navElements{
+  padding: 1vh 0;
   display: flex;
   justify-content: space-between;
   
 }
 
 .navElements.scrolled{
-  /* background: rgba( 255, 255, 255, 0.05 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  
+  background: rgba( 255, 255, 255, 0.05 );
   backdrop-filter: blur( 6px );
   -webkit-backdrop-filter: blur( 6px );
-  border-radius: 10px; */
+  border-radius: 10px;
 
-  background-color: var(--trial);
+  /* background-color: var(--trial); */
   border-radius: 10vh;
+
+}
+
+#logo{
+  margin-left: 4vh;
+  background-color: var(--transparent);
 
 }
 
@@ -58,17 +67,22 @@
   font-weight: 800;
   font-size: 7vh;
   letter-spacing: -2%;
+  background-color: var(--transparent);
 
 }
 
 #logo a span{
   color: var(--highlight);
+  background-color: var(--transparent);
+
 }
 
 .navItems{
  display: flex;
  align-items: center;
  justify-content: space-between;
+ background-color: var(--transparent);
+
 }
 
 .navItems a {
@@ -78,12 +92,17 @@
   padding: 1vh;
   margin: 0 2vh;
   color: var(--white);
+  background-color: var(--transparent);
+
 }
 
 .start{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 4vh;
+  background-color: var(--transparent);
+
 }
 
 .start button {
