@@ -1,11 +1,34 @@
 
 
+import React, { useState, useEffect } from "react";
+
 
 function Nav(){
+   
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 5) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+   
+   
+   
+   
     return(
         
-        <div className="navBar">
-            <nav className="navElements">
+        <div className={`navBar ${isScrolled ? "scrolled" : ""}`}>
+            <nav className={`navElements ${isScrolled ? "scrolled" : ""}`}>
                 <div id="logo">
                   <a href="#">Vantra<span>.</span></a>  
                 </div>
