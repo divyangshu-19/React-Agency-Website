@@ -18,7 +18,7 @@
 }
 
 
-
+/* 
 .navBar {
   margin: 0vh 10vh;
   transition: background-color 0.3s ease-in-out, margin 0.5s ease-in-out; 
@@ -29,7 +29,6 @@
   position: sticky;
   top: 1vh;
   z-index: 1000;
-  /* background-color: var(--highlight); */
   background-color: var(--transparent);
   border-radius: 10vh;
   
@@ -49,11 +48,10 @@
 .navElements.scrolled{
   
   background: rgba( 255, 255, 255, 0.05 );
-  backdrop-filter: blur( 6px );
+  backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
 
-  /* background-color: var(--trial); */
   border-radius: 10vh;
 
 }
@@ -116,7 +114,7 @@
   font-size: 3vh;
   padding: 1.5vh 3vh;
   border-radius: 10vh;
-}
+} */
 
 
 
