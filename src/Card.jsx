@@ -7,7 +7,7 @@ function Card() {
       
         <div className="cardBody">
 
-            <h1 className="cardText">The one website ofr all your degital needs</h1>
+            <h1 className="cardText">The one website for all your degital needs</h1>
             <div className="cardImg">
 
             <img src={Hero} alt="hhhh" />

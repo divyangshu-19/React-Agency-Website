@@ -9,7 +9,7 @@ function Nav(){
 
     useEffect(() => {
       const handleScroll = () => {
-        if (window.scrollY > 5) {
+        if (window.scrollY > 1) {
           setIsScrolled(true);
         } else {
           setIsScrolled(false);
