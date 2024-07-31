@@ -64,6 +64,39 @@ function Start() {
         </div>
       </div>
 
+      {
+        //changes by ranvir
+        //currentStep has been changed from >= to ==, to make sure the previous state is not active 
+        // Each line indicating the step progress is kept inside a div so that appropriate hignt with can be given to lineContsiner with respect to step, and making it center veritcally the progress line can be centered.
+        /*
+        <div className="stepIndicator">
+        <div className={`step ${currentStep == 1 ? 'active' : ''}`}>
+          <span className="stepNumber">{currentStep > 1 ? '✓' : '1'}</span>
+        </div>
+        <div className="lineContainer">
+          <div className={`line ${currentStep == 2 ? 'active' : ''}`}></div>
+        </div>
+        <div className={`step ${currentStep == 2 ? 'active' : ''}`}>
+          <span className="stepNumber">{currentStep > 2 ? '✓' : '2'}</span>
+        </div>
+        <div className="lineContainer">
+          <div className={`line ${currentStep == 2 ? 'active' : ''}`}></div>
+        </div>
+        <div className={`step ${currentStep == 3 ? 'active' : ''}`}>
+          <span className="stepNumber">{currentStep === 3 ? '3' : '3'}</span>
+        </div>
+      </div>
+      */
+    //  The label is been entirly moved out from the step, it is moved outside in another div to manage them indipendently from the step.
+     /*
+      <div className="label">
+        <span className="stepLabel">Start</span>
+        <span className="stepLabel">Select Service</span>
+        <span className="stepLabel">Description</span>
+      </div>
+        */
+      }
+
       {/* Step 1: Basic Information */}
       {currentStep === 1 && (
         <div  className="formSection">
