@@ -9,7 +9,7 @@ function App() {
    
    <>
    <Nav></Nav>
-   <Start></Start>
+   {/* <Start></Start> */}
    <Card></Card>
    <Card></Card>
 

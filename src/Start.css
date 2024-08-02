@@ -3,9 +3,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--white);
+    height: 80vh;
     
   }
+
+  .heading {
+    display: flex;
+  }
+
+  .heading h1 {
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  .heading span h1 {
+    color: var(--highlight);
+    margin: 0 2vh;
+    
+
+  }
   
+  .formHeading{
+
+  }
+  
+
+
+
   .stepIndicator {
     margin-top: 3vh;
     display: flex;
@@ -31,15 +56,15 @@
   
   .step .stepNumber {
     background-color: #ccc;
-    color: white;
+    color: var(--black);
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 3vh;
+    height: 3vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
-    font-size: 18px;
+    /* margin-bottom: 5px; */
+    /* font-size: 18px; */
   }
 
   /* .step .stepNumber {
@@ -51,7 +76,7 @@
   } */
   
   .step.active .stepNumber {
-    background-color: #007bff;
+    background-color:var(--white);
   }
   
   /* .step.active {
@@ -65,7 +90,7 @@
 
 
   .step.active .stepNumber {
-    background-color: #007bff;
+    background-color: var(--white);
     transform: scale(1.6);
   }
 
@@ -79,7 +104,7 @@
   .line {
     width: 50px;
     height: 2px;
-    background-color: #ccc;
+    background-color: var(--white);
   }
 
   /* .line {
@@ -90,22 +115,56 @@
   } */
   
   .line.active {
-    background-color: var(--highlight);
+    background-color: var(--white);
   }
   
   .stepLabel {
     font-size: 14px;
+    display: none;
   }
   
-  .formButton {
-    padding: 10px 20px;
-    margin: 10px;
+  
+
+  .inputBoxes{
+    border: solid 0.5vh var(--white);
+    border-radius: 2vh;
+    margin: 2vh;
+    width: 50vh;
+    height: 7vh;
+    color: var(--white);
+    padding: 0 3vh;
+    
+    font-size: 3vh;
+    background-color: var(--transparent);
+  }
+
+
+
+  .nextButton {
+    padding: 1vh 3vh;
+    /* margin: 10px; */
     border: none;
+    font-size: 4vh;
+    font-weight: 900;
     background-color: var(--highlight);
-    color: white;
-    border-radius: 5px;
+    color: var(--black);
+    border-radius: 4vh;
     cursor: pointer;
   }
+  
+  .backButton{
+    color: var(--white);
+    padding: 1vh 3vh;
+    /* margin: 10px; */
+    border: none;
+    font-size: 4vh;
+    font-weight: 700;
+    background-color: var(--transparent);
+    border-radius: 4vh;
+    cursor: pointer;
+  }
+
+
   
   /* .navigationButtons {
     display: flex;
