@@ -2,10 +2,12 @@
 
   import React, { useState, useEffect } from "react";
   import "./nav.css";
-
+  import Start from './Start'; // Import Start component
   function Nav(){
     
       const [isScrolled, setIsScrolled] = useState(false);
+      const [showStart, setShowStart] = useState(false); // State to track visibility of Start component
+
 
       useEffect(() => {
         const handleScroll = () => {
@@ -38,9 +40,11 @@
                       <a href="#">About</a>
                   </div>
                   <div className="start">
-                      <button>Lets Start</button>
+                  <button onClick={() => setShowStart(true)}>Let's Start</button> {/* Update state on click */}
                   </div>
               </nav>
+              {showStart && <Start />} {/* Conditionally render Start component */}
+
           </div>
       )
   }

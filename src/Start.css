@@ -1,0 +1,191 @@
+.startForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    height: 80vh;
+    
+  }
+
+  .heading {
+    display: flex;
+  }
+
+  .heading h1 {
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  .heading span h1 {
+    color: var(--highlight);
+    margin: 0 2vh;
+    
+
+  }
+  
+  .formHeading{
+
+  }
+  
+
+
+
+  .stepIndicator {
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  /* styling changes made on step */
+  /*
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+  }
+  */
+  
+  .step .stepNumber {
+    background-color: #ccc;
+    color: var(--black);
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 5px; */
+    /* font-size: 18px; */
+  }
+
+  /* .step .stepNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    align-self: center; 
+  } */
+  
+  .step.active .stepNumber {
+    background-color:var(--white);
+  }
+  
+  /* .step.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #007bff;
+    background-color: white;
+    transform: scale(1.4);
+  } */
+
+
+  .step.active .stepNumber {
+    background-color: var(--white);
+    transform: scale(1.6);
+  }
+
+  /* .step.active .stepNumber{
+    height: 32px;
+    width: 32px;
+    background-color: #007bff ;
+    border-radius: 50%;
+  } */
+  
+  .line {
+    width: 50px;
+    height: 2px;
+    background-color: var(--white);
+  }
+
+  /* .line {
+    width: 70px;
+    height: 4px;
+    background-color: #ccc;
+    margin-top: 5px;
+  } */
+  
+  .line.active {
+    background-color: var(--white);
+  }
+  
+  .stepLabel {
+    font-size: 14px;
+    display: none;
+  }
+  
+  
+
+  .inputBoxes{
+    border: solid 0.5vh var(--white);
+    border-radius: 2vh;
+    margin: 2vh;
+    width: 50vh;
+    height: 7vh;
+    color: var(--white);
+    padding: 0 3vh;
+    
+    font-size: 3vh;
+    background-color: var(--transparent);
+  }
+
+
+
+  .nextButton {
+    padding: 1vh 3vh;
+    /* margin: 10px; */
+    border: none;
+    font-size: 4vh;
+    font-weight: 900;
+    background-color: var(--highlight);
+    color: var(--black);
+    border-radius: 4vh;
+    cursor: pointer;
+  }
+  
+  .backButton{
+    color: var(--white);
+    padding: 1vh 3vh;
+    /* margin: 10px; */
+    border: none;
+    font-size: 4vh;
+    font-weight: 700;
+    background-color: var(--transparent);
+    border-radius: 4vh;
+    cursor: pointer;
+  }
+
+
+  
+  /* .navigationButtons {
+    display: flex;
+    justify-content: flex-end;
+  }
+   */
+  .formSection {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+  }
+
+  /* New className and css that has been added */
+  /* .lineContainer {
+    height: 36px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  } */
+  
+ 
+  
